@@ -12,7 +12,6 @@ import com.hoony.notificationstyleexample.R
 import com.hoony.notificationstyleexample.databinding.ActivityMainBinding
 import com.hoony.notificationstyleexample.fragment.BigPictureFragment
 import com.hoony.notificationstyleexample.fragment.BigTextFragment
-import com.hoony.notificationstyleexample.fragment.MessagingFragment
 import com.hoony.notificationstyleexample.notification.NotificationHelper
 import com.hoony.notificationstyleexample.util.VersionUtil
 
@@ -23,7 +22,6 @@ class MainActivity : AppCompatActivity() {
     private var nowFragmentName: String = ""
     private val bigTextFragment: BigTextFragment = BigTextFragment()
     private val bigPictureFragment: BigPictureFragment = BigPictureFragment()
-    private val messageFragment: MessagingFragment = MessagingFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -78,7 +76,6 @@ class MainActivity : AppCompatActivity() {
             R.id.bigTextStyle -> bigTextFragment
             R.id.bigPictureStyle -> bigPictureFragment
             R.id.inboxStyle -> null
-            R.id.messagingStyle -> messageFragment
             R.id.mediaStyle -> null
             else -> null
         }
